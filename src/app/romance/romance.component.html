@@ -1,0 +1,16 @@
+<body style="color: rgb(10, 6, 1);" class="bg">
+    <div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px;">
+     <div class="card" *ngFor="let i of category">
+       <img [src]="i.image3" />
+       <div class="info">
+         <h1>{{ i.title3}}</h1>
+         <p>{{ i.details3}}</p>
+        <button (click)="goToNextPage(i.id)">More Details</button>&nbsp;
+      
+            
+   
+   
+       </div>
+     </div>
+   </div>
+   </body>

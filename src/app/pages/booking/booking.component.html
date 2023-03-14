@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Taxi Booking Form</title>
+</head>
+<div style="background-color: rgb(255, 255, 255);">
+<h2>Book Now!!</h2><br>
+<div >
+  <div style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.fDQWt0nTY4dD7atIVXXhIAHaEM&pid=Api&P=0');">
+    <div style="background-color: rgb(255, 255, 255);" class="container1">
+      <form action="submit_phpcrm_form.php" method="post">
+      
+        
+            <!-- <p>Personal Details</p> --><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone" required>
+   
+              <p>Booking Details</p>
+        <div class="row">
+        
+              <div class="col-50">
+        
+                        <label for="">Choose Book:</label>
+                <select name="" id="">
+                  <option value="fiction">Fiction</option>
+                  <option value="nonfiction">Non Fiction</option>
+                  <option value="romance">Romance</option>
+                  <option value="humor">Humor</option>
+                </select>
+        
+              </div>
+            
+              <div class="col-50">
+
+        <label for="passenger">Book name</label>
+                <input type="name" id="passenger" name="passenger" required>
+              </div>
+            </div>     
+       
+        <div class="row">
+          <div class="col-50">
+            <p>Permanent Address</p>
+             <label for="pstreet">Street</label>
+              <input type="text" id="pstreet" name="pstreet" required>
+              <label for="pcity">City</label>
+              <input type="text" id="pcity" name="pcity" required>
+              <label for="pstate">State</label>
+              <input type="text" id="pstate" name="pstate" required>
+              <label for="pzipcode">Zip Code</label>
+              <input type="number" id="pzipcode" name="pzipcode" required>
+          
+          </div>
+          <div class="col-50">
+        
+            <p> Communication Address</p>
+               <label for="dstreet">Street</label>
+              <input type="text" id="dstreet" name="dstreet" required>
+              <label for="dcity">City</label>
+              <input type="text" id="dcity" name="dcity" required>
+              <label for="dstate">State</label>
+              <input type="text" id="dstate" name="dstate" required>
+              <label for="dzipcode">Zip Code</label>
+              <input type="number" id="dzipcode" name="dzipcode" required>
+
+        </div>
+          </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" style="height:100px"></textarea>  
+      <!-- <input type="radio" id="oneway" name="trip" value="One Way">
+      <label for="oneway">One Way</label><br>
+      <input type="radio" id="round" name="trip" value="Round Trip">
+      <label for="round">Round Trip</label><br> -->
+        <input type="submit" value="Confirm Booking" class="btn">
+      </form>
+    </div>
+  </div>
