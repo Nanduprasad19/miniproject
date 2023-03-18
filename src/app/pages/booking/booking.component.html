@@ -92,18 +92,21 @@
   
               <div class="col-8">
                 <label for="country" class="form-label">Country</label>
-                <select name="country"   [(ngModel)]="address"class="form-select" id="country"  required>
+                <select name="country"   [(ngModel)]="country"class="form-select" id="country"  required>
                   <option value="">Choose...</option>
-                  <option>United States</option>
+                  <option>India</option>
+                  
                 </select>
                 <div class="invalid-feedback">Please select a valid country.</div>
               </div>
   
               <div class="col-8">
                 <label for="state" class="form-label">State</label>
-                <select name="state"  [(ngModel)]="address" class="form-select" id="state" required>
+                <select name="state"  [(ngModel)]="state" class="form-select" id="state" required>
                   <option value="">Choose...</option>
-                  <option>California</option>
+                  <option>Tamilnadu</option>
+                  <option>kerala</option>
+                  <option>Karnadaka</option>
                 </select>
                 <div class="invalid-feedback">Please provide a valid state.</div>
               </div>
