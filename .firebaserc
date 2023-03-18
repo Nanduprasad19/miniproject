@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "comic-7fae0": {
+      "hosting": {
+        "minproject": [
+          "comic-7fae0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "comic-7fae0"
+  }
+}

@@ -17,27 +17,31 @@
           
 
           <li class="nav-item">
-            <a id="fon"  style="color:white;" class="nav-link" routerLink="login">LOGIN</a>
+            <a id="fon"  style="color:white;" class="nav-link" routerLink="login"   *ngIf="!auth.isLoggedIn()">  LOGIN</a>
           </li>
           
           <li class="nav-item">
-            <a id="fon" style="color:white;" class="nav-link" routerLink="signup">SIGNUP</a>
+            <a id="fon" style="color:white;" class="nav-link" routerLink="signup" *ngIf="!auth.isLoggedIn()">SIGNUP</a>
+          </li>
+          <li class="nav-item">
+            <a id="fon" style="color:white;" class="nav-link" routerLink="" (click)="logout()" *ngIf="auth.isLoggedIn()">LOGOUT</a>
           </li>
           <li class="nav-item">
             <a id="fon" style="color:white;" class="nav-link" routerLink="contactus">CONTACT</a>
           </li>
-          <a style="margin-left: 350px; font-weight: bold; font-family: 'Times New Roman', Times, serif;font-size: 2vw;" class="navbar-brand" href="#">COMIC HUB</a>
+          <a style="margin-left: 250px; font-weight: bold; font-family: 'Times New Roman', Times, serif;font-size: 2vw;" class="navbar-brand" href="#">COMIC HUB</a>
           <li class="nav-item dropdown">
             <a style="margin-left: 350px; color:white;"class="nav-link dropdown-toggle" href="#" id="font" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              CATEGORY
             </a>
             <ul class="dropdown-menu" style="margin-left: 300px;">
-              <li><a style="color:white;" class="dropdown-item"routerLink="fiction">Fiction</a></li>
-              <li><a style="color:white;" class="dropdown-item" routerLink="nonfiction">NonFiction</a></li>
-              <li><a style="color:white;" class="dropdown-item" routerLink="romance">Romance</a></li>
-              <li><a style="color:white;" class="dropdown-item" routerLink="humor">Humor</a></li>
+              <li><a style="color:rgb(206, 21, 21);" class="dropdown-item"routerLink="fiction">Fiction</a></li>
+              <li><a style="color:rgb(230, 29, 29);" class="dropdown-item" routerLink="nonfiction">NonFiction</a></li>
+              <li><a style="color:rgb(239, 21, 21);" class="dropdown-item" routerLink="romance">Romance</a></li>
+              <li><a style="color:rgb(255, 19, 19);" class="dropdown-item" routerLink="humor">Humor</a></li>
             </ul>
           </li>
+      
           
 
         </ul>
